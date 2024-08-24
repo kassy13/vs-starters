@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .list li {
+        list-style: circle;
+        /* list-style-image: url(/images/laptopw.jpg); */
+        height: 20px;
+        font-size: 50px;
+      }
+      h1 {
+        color: aqua;
+        font-style: italic;
+        font-weight: 100;
+        font-stretch: ultra-condensed;
+        line-height: 1.3;
+        /* font-size: 300px; */
+        /* width: 300px;
+        height: 300px; */
+        /* padding: 20px; */
+        /* padding: 20px 50px 10px 30px; */
+        text-align: justify;
+        /* padding-inline: 3rem 1rem;
+        padding-block: 3rem 1rem; */
+        /* margin: 30px;
+        background-color: black;
+        width: 100px; */
+      }
+      @media screen and (max-width: 767px) {
+        h1 {
+          font-size: 20px;
+        }
+      }
+      .imgdiv {
+        width: 700px;
+        height: 500px;
+        background-color: aqua;
+        background-image: url(/images/laptopw.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 120% 20%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: left center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="/index.html">back</a>
+    <div class="imgdiv">
+      <!-- <img src="/images/laptopw.jpg" alt="" /> -->
+    </div>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ullam
+      minima provident, maiores at a quae voluptas id qui harum?
+    </h1>
+    <table>
+      <caption>
+        Premier League
+      </caption>
+      <thead>
+        <tr>
+          <th>S/N</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>State of origin</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <colgroup>
+        <col style="background-color: aqua; width: 100px" />
+        <col style="background-color: rgb(255, 242, 0); width: 300px" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Somtoo</td>
+          <td>Obi</td>
+          <td>Anambra</td>
+          <td>somtooObi@gmail.com</td>
+          <td>09473832282</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mary ann</td>
+          <td>Okeke</td>
+          <td>Anambra</td>
+          <td>somtooObi@gmail.com</td>
+          <td>09473832282</td>
+        </tr>
+      </tbody>
+    </table>
+    <section class="list">
+      <ul>
+        <li>hdhdh</li>
+        <li>dbdjdh</li>
+      </ul>
+    </section>
+  </body>
+</html>

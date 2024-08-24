@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dancing-script-mary-ann {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  background-color: bisque;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  width: 50%;
+  display: flex;
+  /* background-color: rgb(11, 11, 10); */
+}
+main {
+  width: 50%;
+  height: 70vh;
+  /* background-color: rgb(106, 67, 10); */
+}
+main div {
+  width: 100%;
+  height: 100%;
+}
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+aside {
+  background-color: whitesmoke;
+  width: 50%;
+  height: 70vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+aside h4 {
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  padding-bottom: 1rem;
+}
+
+aside h1 {
+  /* font-size: 25px; */
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+aside p {
+  color: gray;
+  padding-bottom: 1rem;
+}
+aside .price {
+  font-size: 20px;
+  font-weight: 800;
+  color: goldenrod;
+  padding-bottom: 1rem;
+}
+aside .price span {
+  font-size: 10px;
+  font-weight: 100;
+  color: gray;
+  padding-left: 0.5rem;
+}
+
+aside button {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+aside button i {
+  padding-right: 0.5rem;
+}

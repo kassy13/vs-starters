@@ -1,0 +1,192 @@
+/* Syntax for css */
+/* element to be style:{
+styles to be given to the element
+} */
+
+/* ELement selector */
+
+body {
+  padding-bottom: 15rem;
+}
+h1 {
+  font-weight: 900;
+  background-color: brown;
+  font-stretch: narrower;
+}
+
+/* Class selector */
+.element2 {
+  font-size: 200px;
+  font-weight: 100;
+  background-color: rgb(63, 165, 42);
+  /* padding-top: 15rem;
+  margin-top: 15rem; */
+}
+
+/* For id */
+#h1el {
+  text-align: center;
+  font-size: smaller;
+  color: pink;
+}
+/* Grouping elements */
+input,
+select {
+  width: 300px;
+  height: 40px;
+  padding: 1.3rem;
+}
+
+/* Universal selector */
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* COMBINATORS */
+/* section div p {
+  color: red;
+  background-color: aqua;
+} */
+/* section > div > p {
+  color: red;
+  background-color: aqua;
+} */
+
+div.main {
+  width: 100%;
+  height: 200px;
+  color: white;
+  background-color: blue;
+}
+
+/* div.main {
+  height: 60px;
+  margin-bottom: 1rem;
+  border-bottom: 10px solid black;
+  background-color: aquamarine;
+  font-size: 60px;
+} */
+a.hov {
+  font-size: 200px;
+  padding: 1rem;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+/* a:hover {
+  background-color: black;
+  display: block;
+  width: 300px;
+} */
+
+/* a.hov:visited {
+  color: aquamarine;
+} */
+/* PSUEDO CLASSES */
+a.hov:active {
+  color: rgb(249, 255, 127);
+}
+h1:hover {
+  border-radius: 50%;
+}
+
+input:focus {
+  background-color: red;
+  color: white;
+}
+
+/* LOOK WHY THE CHECKED PSUEDO CLASS IS  NOT TAKING EFFECT */
+
+input [type="checkbox"]:checked lab {
+  color: rebeccapurple !important;
+  background-color: aqua !important;
+}
+
+section.first {
+  margin-top: 3rem;
+}
+li:last-child {
+  background-color: red;
+  color: white;
+}
+li:nth-child(1) {
+  background-color: rgb(0, 153, 255);
+  color: white;
+}
+section.first p:nth-of-type(2) {
+  background-color: rgb(255, 0, 195);
+  color: white;
+}
+section.first li:nth-child(1) {
+  font-size: 40px;
+}
+section.first p:not(.not) {
+  font-weight: 900;
+  color: chocolate;
+}
+
+section.el p::first-letter {
+  font-size: 300px;
+  color: red;
+}
+
+section.el p::first-line {
+  font-size: 50px;
+  color: rgb(170, 255, 0);
+}
+section.el p::selection {
+  font-size: 50px;
+  color: rgb(0, 255, 47);
+}
+li::marker {
+  font-size: 300px;
+  color: pink;
+}
+section.el p::before {
+  content: "HELLO";
+}
+section.el p::after {
+  content: "HELLO";
+}
+
+/* Css properties */
+p {
+  color: #0059ff39;
+}
+.h2 {
+  line-height: 5;
+  /* letter-spacing: 30px; */
+  word-spacing: 30px;
+  text-align: start;
+  text-decoration-style: solid;
+
+  width: 70%;
+  padding: 20px;
+  border: 10px solid transparent;
+  text-transform: uppercase;
+  background-color: transparent;
+  box-shadow: 20px 200px 100px rgb(38, 11, 11);
+  text-shadow: 2px 2px 3px rgb(245, 9, 48);
+  caret-color: chartreuse;
+  direction: rtl;
+  /* display: none; */
+}
+.li li {
+  padding-left: 3rem;
+  font-size: 40px;
+  cursor: wait;
+
+  /* list-style: georgian; */
+}
+
+section.el input {
+  font-size: 30px;
+  caret-color: yellow;
+}
+
+.img {
+  filter: sepia(20%);
+}
